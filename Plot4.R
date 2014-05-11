@@ -6,7 +6,7 @@ times=myData$V2
 pasted<-paste (dates,times)
 datetime<-strptime(pasted, "%Y-%d-%m %H:%M:%S")
 
-png(filename="plot4.png",width=504,height=504)
+png(filename="plot4.png",width=480,height=480)
 par(mfrow=c(2,2))
 plot(datetime,myData$V3,xlab="",ylab="Global Active Power",lty="solid",type="l")
 plot(datetime,myData$V5,ylab="Voltage",lty="solid",type="l")

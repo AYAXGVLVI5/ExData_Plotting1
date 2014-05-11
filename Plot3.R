@@ -5,7 +5,7 @@ dates=as.Date(myData$V1,"%m/%d/%Y")
 times=myData$V2
 pasted<-paste (dates,times)
 datetime<-strptime(pasted, "%Y-%d-%m %H:%M:%S")
-png(filename="plot3.png",width=504,height=504)
+png(filename="plot3.png",width=480,height=480)
 plot(datetime,myData$V7,xlab="",ylab="Energy sub metering",lty="solid",type="l")
 lines(datetime,myData$V8,type="l",col="red")
 lines(datetime,myData$V9,type="l",col="blue")

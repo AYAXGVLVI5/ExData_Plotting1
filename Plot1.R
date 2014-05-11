@@ -5,6 +5,6 @@ dates=as.Date(myData$V1,"%m/%d/%Y")
 times=myData$V2
 pasted<-paste (dates,times)
 datetime<-strptime(pasted, "%Y-%d-%m %H:%M:%S")
-png(filename="plot1.png",width=504,height=504)
+png(filename="plot1.png",width=480,height=480)
 hist(myData$V3,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off()
